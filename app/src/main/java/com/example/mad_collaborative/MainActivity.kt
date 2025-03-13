@@ -18,5 +18,16 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
+        fun main(args : Array<String>) {
+            println("Welcome!")
+        }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+    WelcomeTheme {
+        Greeting("App")
     }
 }
